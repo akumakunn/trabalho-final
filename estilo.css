@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+#topo{
+    width: 100%;
+    float: left;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+}
+#topo a{
+    color:white;
+    font-size: 0.8em;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(/img/logotipo\ quentinhas.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#btn_menu{
+    width: 50px;
+    height: 50px;
+    float:right;
+    margin-top: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+#menu{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+}
+#menu:target{
+    height: 100%;
+}
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+#menu ul li{
+    padding: 3%;
+    transition: 0.2s;
+    font-size: 1.1em;
+}
+#banner{
+    width: 100%;
+    float: left;
+}
+#texto{
+    margin-bottom: 300px;
+}
+#sobre-nos{
+    width: 100%;
+    float: left;
+}
+#banner2{
+    width: 100%;
+    height: 100%;
+}
+#texto2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3% 4%;
+}
+#texto2 p{
+    float:left;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.0em;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #infos{
+    width: 100%;
+    float: left;
+    height: 500px;
+    background-color: #962f33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#infos p{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+#endereco p{
+    margin-top: 20px;
+}
+
+#infos h3{
+    text-align: center;
+    color: white;
+}
+
+#infos a{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+#redes_sociais,#tel{
+    display: flex;
+    justify-content: center;
+}
+
+#redes_sociais{
+    margin-right: 45px;
+}
+
+#redes_sociais a{
+    margin-left: 50px;
+}
+
+#rodape{
+    width: 100%;
+    height: 100px;
+    float: left;
+    background-color: #641a1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #4d0e10;
+}
+
+#rodape p{
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+
+
+  @media screen and (min-width:720px){
+    #sobre-nos{
+        width: 100%;
+        float: left;
+        display: flex;
+    }
+  }
